@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "netlify deploy"
+    "deploy": "astro check && astro build && netlify deploy --prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.2",
